@@ -59,7 +59,7 @@ CssRGBColor >> functionName [
 	^ alphaChannel functionNameFor: 'rgb'
 ]
 
-{ #category : #'initialize-release' }
+{ #category : #initialization }
 CssRGBColor >> initializeRed: aRedComponent green: aGreenComponent blue: aBlueComponent alphaChannel: theAlphaChannelInfo [
 	
 	redComponent := aRedComponent.
@@ -68,7 +68,7 @@ CssRGBColor >> initializeRed: aRedComponent green: aGreenComponent blue: aBlueCo
 	alphaChannel := theAlphaChannelInfo
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #converting }
 CssRGBColor >> newWithAlpha: alphaValue [
 
 	^ self class

@@ -20,5 +20,5 @@ CssTypeSelectorTest >> testBuildingShortcut [
 { #category : #Tests }
 CssTypeSelectorTest >> testPrintString [
 
-	self assert: (CssTypeSelector ofType: 'h1') printString = 'h1'
+	self assert: (CssTypeSelector ofType: 'h1') printString equals: 'h1'
 ]
