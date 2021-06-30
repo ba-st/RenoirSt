@@ -14,7 +14,7 @@ CssColor >> componentsDo: aBlockClosure separatedBy: aSeparationBlock [
 	self subclassResponsibility 
 ]
 
-{ #category : #Printing }
+{ #category : #printing }
 CssColor >> cssContentOn: aWriteStream [
 	aWriteStream
 		nextPutAll: self functionName;
@@ -29,7 +29,7 @@ CssColor >> functionName [
 	self subclassResponsibility 
 ]
 
-{ #category : #Converting }
+{ #category : #converting }
 CssColor >> identifiedBy: aString [
 
 	 ^CssIdentifiedColor representing: self identifiedBy: aString 

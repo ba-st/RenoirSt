@@ -7,13 +7,13 @@ Class {
 	#category : #'RenoirSt-Core-Colors'
 }
 
-{ #category : #Converting }
+{ #category : #converting }
 CssColorUnit >> identifiedBy: aString [
 
 	self subclassResponsibility 
 ]
 
-{ #category : #Converting }
+{ #category : #converting }
 CssColorUnit >> newWithAlpha: alphaValue [ 
 
 	self subclassResponsibility 

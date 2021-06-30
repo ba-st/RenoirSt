@@ -1,7 +1,7 @@
-Tutorial
-========
+# Tutorial
 
-### Table Of Contents
+## Table Of Contents
+
 - [Part I](Tutorial-Part-I.md)
   - Introduction
   - Basics
@@ -10,10 +10,10 @@ Tutorial
     - Type Selectors
     - Combinators
     - Class and Id Selectors
-	- Attribute Selectors
+  - Attribute Selectors
     - Pseudo-Classes
     - Pseudo-Elements
-	- Selector Groups
+  - Selector Groups
 - [Part III](Tutorial-Part-III.md )
   - Important Rules
   - Keyframes

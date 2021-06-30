@@ -59,7 +59,7 @@ CssHSLColor >> functionName [
 	^ alphaChannel functionNameFor: 'hsl'
 ]
 
-{ #category : #'initialize-release' }
+{ #category : #initialization }
 CssHSLColor >> initializeHue: aHueValueInDegrees saturation: aSaturationPercentage lightness: aLightnessPercentage alphaChannel: aCssAlphaChannel [
 	
 	hue := aHueValueInDegrees.
@@ -68,7 +68,7 @@ CssHSLColor >> initializeHue: aHueValueInDegrees saturation: aSaturationPercenta
 	alphaChannel := aCssAlphaChannel
 ]
 
-{ #category : #Converting }
+{ #category : #converting }
 CssHSLColor >> newWithAlpha: alphaValue [
 
 	^ self class

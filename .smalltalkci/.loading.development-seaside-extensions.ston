@@ -2,14 +2,15 @@ SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
       #baseline : 'RenoirSt',
-      #directory : 'source',
-      #load : [ 'CI' ],
+      #directory : '../source',
+      #load : [ 'Development-Seaside-Extensions' ],
       #platforms : [  #pharo ]
     }
   ],
   #testing : {
     #coverage : {
-       #packages : [ 'RenoirSt*' ]
+      #packages : [ 'RenoirSt*' ],
+      #format: #lcov
     }
   }
 }
