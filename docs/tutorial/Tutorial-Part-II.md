@@ -115,7 +115,7 @@ div ~ ol
 
 ```smalltalk
 CascadingStyleSheetBuilder new
-  declareRuleSetFor: [:selector | 
+  declareRuleSetFor: [:selector |
     (selector div class: 'pastoral') id: #account5 ]
   with: [:style | style listStyleType: #lowerRoman ];
   build

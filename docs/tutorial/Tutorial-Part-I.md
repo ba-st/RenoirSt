@@ -143,7 +143,7 @@ RGB-Colors also support percentual values:
 ```smalltalk
 CascadingStyleSheetBuilder new
   declareRuleSetFor: [:selector | selector div ]
-  with: [:style | style borderColor: 
+  with: [:style | style borderColor:
     (CssRGBColor red: 0 percent green: 50 percent blue: 0 percent) ];
   build
 ```
@@ -213,7 +213,7 @@ CascadingStyleSheetBuilder new
   declareRuleSetFor: [:selector | selector div class: 'logo' ]
   with: [:style | style backgroundImage: 'images/logo.png' asZnUrl ];
   declareRuleSetFor: [:selector | selector div class: 'logo' ]
-  with: [:style | style 
+  with: [:style | style
     backgroundImage: 'http://www.example.com/images/logo.png' asZnUrl ];
   build
 ```
@@ -325,7 +325,7 @@ It's supported using the `CssToggle` abstraction.
 ```smalltalk
 CascadingStyleSheetBuilder new
   declareRuleSetFor: [:selector | selector unorderedList unorderedList ]
-  with: [:style | style listStyleType: 
+  with: [:style | style listStyleType:
     (CssToggle cyclingOver: { #disc. #circle. #square}) ];
   build
 ```
@@ -351,7 +351,7 @@ an attribute name:
 ```smalltalk
 CascadingStyleSheetBuilder new
   declareRuleSetFor: [:selector | selector div before ]
-  with: [:style | style content: 
+  with: [:style | style content:
     (CssAttributeReference toAttributeNamed: 'title') ];
   build
 ```
@@ -390,7 +390,7 @@ also it's possible to provide a fallback value in case the attribute is not pres
 ```smalltalk
 CascadingStyleSheetBuilder new
   declareRuleSetFor: [:selector | selector div before ]
-  with: [:style | style content: 
+  with: [:style | style content:
     (CssAttributeReference toStringAttributeNamed: 'title'
       withFallback: 'Missing title') ];
   build
@@ -408,7 +408,7 @@ div::before
 ```smalltalk
 CascadingStyleSheetBuilder new
   declareRuleSetFor: [:selector | selector div before ]
-  with: [:style | style content: 
+  with: [:style | style content:
     (CssAttributeReference toAttributeNamed: 'height'
     ofType: #pixel withFallback: 10 px) ];
   build
@@ -516,7 +516,7 @@ CascadingStyleSheetBuilder new
       fading: { #red. (CssColorStop for: #yellow at: 50 px). #green }) ];
   declareRuleSetFor: [:selector | selector div ]
   with: [:style | style background:
-    (CssRadialGradient 
+    (CssRadialGradient
       elliptical: {20 px. 30 px}
       at: { 20 px. 30 px}
       fading: { #red. #yellow. #green }) ];
@@ -538,7 +538,8 @@ div
 
 div
 {
-  background: radial-gradient(farthest-side ellipse at left bottom, red, yellow 50px, green);
+  background: radial-gradient(farthest-side ellipse at left bottom, red,
+    yellow 50px, green);
 }
 
 div
@@ -593,7 +594,7 @@ CascadingStyleSheetBuilder new
                     transform: (CssRotate by: 360 deg);
                     background: #red ] ]
     forKeyframesNamed: 'spin';
-	build
+  build
 ```
 
 Evaluates to:
@@ -732,15 +733,15 @@ An example:
 
 ```smalltalk
 CascadingStyleSheetBuilder new
-  declareRuleSetFor: [ :selector | selector div ] 
-  with: [ :style | 
+  declareRuleSetFor: [ :selector | selector div ]
+  with: [ :style |
     style
       background: #blue;
       animation: 'skewAnimation 5s linear infinite';
       width: 100 px;
       height: 100 px ];
-  declare: [ :cssBuilder | 
-    cssBuilder 
+  declare: [ :cssBuilder |
+    cssBuilder
       declareKeyframeRuleSetAt: 0 percent
       with: [ :style | style transform: (CssSkew by: 45 deg) ] ]
   forKeyframesNamed: 'skewAnimation';
@@ -790,7 +791,7 @@ CascadingStyleSheetBuilder new
             declareKeyframeRuleSetAt: 0 percent
                 with: [ :style | 
                 style
-                    transform: 
+                    transform:
                 {(CssPerspective of: 200 px) . 
                             (CssTranslate 
                                 onXAxisBy: 100 px 
@@ -901,7 +902,7 @@ CascadingStyleSheetBuilder new
           animationName: 'scale';
           animationDuration: 5 s;
           animationTimingFunction: (
-            CssCubicBezier 
+            CssCubicBezier
               firstXAxis:  0.63
               firstYAxis:  0.05
               secondXAxis:  0.43
@@ -912,7 +913,7 @@ CascadingStyleSheetBuilder new
     declare: [ :cssBuilder | 
         cssBuilder
           declareKeyframeRuleSetAt: 0 percent
-            with: [ :style | 
+            with: [ :style |
               style transform: (CssScale by: 2) ];
           declareKeyframeRuleSetAt:  100 percent
             with: [ :style |

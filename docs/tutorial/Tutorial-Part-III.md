@@ -63,13 +63,13 @@ A basic keyframe rule consists of specifying just a keyframe with some style rul
 ```smalltalk
 CascadingStyleSheetBuilder new
   declare: [ :cssBuilder |
-    cssBuilder 
-      declareKeyframeRuleSetAt: 0 percent 
+    cssBuilder
+      declareKeyframeRuleSetAt: 0 percent
         with: [ :style | style backgroundColor: #red ];
       declareKeyframeRuleSetAt: 100 percent
-        with: [ :style | style backgroundColor: #blue ] ] 
+        with: [ :style | style backgroundColor: #blue ] ]
     forKeyframesNamed: 'example';
-  build 
+  build
 ```
 
 To use keyframes in the library just send the message
@@ -394,9 +394,9 @@ CascadingStyleSheetBuilder new
       fontFamily: 'MainText';
       src: (CssExternalFontReference locatedAt: 'gentium.eat' asZnUrl relativeToStyleSheet);
       src: (CssLocalFontReference toFontNamed: 'Gentium') ,
-        (CssExternalFontReference locatedAt: 'gentium.woff' asZnUrl 
+        (CssExternalFontReference locatedAt: 'gentium.woff' asZnUrl
           relativeToStyleSheet withFormat: #woff);
-      src: (CssExternalFontReference 
+      src: (CssExternalFontReference
         svgFontLocatedAt: 'fonts.svg' asZnUrl
         relativeToStyleSheet withId: 'simple') ];
   build

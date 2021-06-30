@@ -26,7 +26,7 @@ You can report issues [here](https://github.com/ba-st/RenoirSt/issues/new)
 
 1. Download a [Pharo Image and VM](https://get.pharo.org/64)
 2. Clone the project or your fork using Iceberg
-3. Open the Working Copy and using the contextual menu select 
+3. Open the Working Copy and using the contextual menu select
    `Metacello -> Install baseline...`
 4. Input `Development-Seaside-Extensions`
 5. This will load the base code and the test cases
