@@ -792,7 +792,7 @@ CascadingStyleSheetBuilder new
                 with: [ :style | 
                 style
                     transform:
-                {(CssPerspective of: 200 px) . 
+                {(CssPerspective of: 200 px).
                             (CssTranslate 
                                 onXAxisBy: 100 px 
                                 onYAxisBy: 100 px 
