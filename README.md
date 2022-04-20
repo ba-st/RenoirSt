@@ -13,10 +13,12 @@ A DSL enabling programmatic cascading style sheet generation for Pharo Smalltalk
 [![Pharo 6.1](https://img.shields.io/badge/Pharo-6.1-informational)](https://pharo.org)
 [![Pharo 7.0](https://img.shields.io/badge/Pharo-7.0-informational)](https://pharo.org)
 [![Pharo 8.0](https://img.shields.io/badge/Pharo-8.0-informational)](https://pharo.org)
+[![Pharo 9.0](https://img.shields.io/badge/Pharo-9.0-informational)](https://pharo.org)
+[![Pharo 10](https://img.shields.io/badge/Pharo-10-informational)](https://pharo.org)
 
-Quick links
+## Quick links
 
-- [**Explore the docs**](docs/)
+- [**Explore the docs**](docs/README.md)
 - [Report a defect](https://github.com/ba-st/RenoirSt/issues/new?labels=Type%3A+Defect)
 - [Request a feature](https://github.com/ba-st/RenoirSt/issues/new?labels=Type%3A+Feature)
 
@@ -36,11 +38,9 @@ Quick links
 - The code is licensed under [MIT](LICENSE).
 - The documentation is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
 
-## Quick Start
+## Installation
 
-- Download the latest [Pharo 32](https://get.pharo.org/) or [64 bits VM](https://get.pharo.org/64/).
-- Download a ready to use image from the [release page](https://github.com/ba-st/RenoirSt/releases/latest)
-- Explore the [documentation](docs/)
+To load the project in a Pharo image follow this [instructions](docs/how-to/how-to-load-in-pharo.md).
 
 ***********************************************
 
@@ -61,11 +61,6 @@ body::before
   content: "Hello World";
 }
 ```
-
-## Installation
-
-To load the project in a Pharo image, or declare it as a dependency of your own
-project follow this [instructions](docs/Installation.md).
 
 ## Contributing
 

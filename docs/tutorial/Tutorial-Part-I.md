@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This tutorial asumes some knowledge of CSS and Pharo Smalltalk.
+This tutorial assumes some knowledge of CSS and Pharo Smalltalk.
 
 The main entry point for the library is the class `CascadingStyleSheetBuilder`.
 Let's see some minimalist example. Copy the following in a workspace and
@@ -12,7 +12,7 @@ Let's see some minimalist example. Copy the following in a workspace and
 CascadingStyleSheetBuilder new build
 ```
 
-Beautiful! You have now an inspector on your fisrt (empty and useless) style
+Beautiful! You have now an inspector on your first (empty and useless) style
 sheet. Let's do something more useful now. Real stylesheets are composed of
 rules (or rule-sets), where each has a selector and a declaration group. The
 selector determines if the rule applies to some element in the DOM, and the
@@ -70,7 +70,7 @@ time and frequency units in the CSS spec. There are extensions for `Integer` and
 - `vmin` 1% of viewport's smaller dimension
 - `vmax` 1% of viewport's larger dimension
 - `cm` centimeters
-- `mm` millimeteres
+- `mm` millimeters
 - `in` inches
 - `pc` picas
 - `pt` points
@@ -432,7 +432,7 @@ commonly used for subtle shading in background images, buttons, and many other
 things. The gradient notations described in this section allow an author to
 specify such an image in a terse syntax, so that the UA can generate the image
 automatically when rendering the page. This notation is supported using
-`CssLinearGradient` and `CssRadialGradient` asbtractions.
+`CssLinearGradient` and `CssRadialGradient` abstractions.
 
 Let's see some examples for linear gradients:
 
@@ -768,7 +768,7 @@ div
 }
 ```
 
-##### Aditional Functions for Transformation
+##### Additional Functions for Transformation
 
 ###### Perspective
 
@@ -991,4 +991,4 @@ renders as:
 64px 64px 12px 40px black, inset 12px 11px 0px 8px black
 ```
 
-[Go to next chapter](Tutorial - Part II.md)
+[Go to next chapter](Tutorial-Part-II.md)

@@ -1,5 +1,5 @@
 "
-A CssLenghtUnitTest is a test class for testing the behavior of CssLenghtUnit
+A CssUnitTest is a test class for testing the behavior of CssUnit
 "
 Class {
 	#name : #CssUnitTest,
