@@ -75,7 +75,7 @@ or
 - Open a workspace and evaluate:
 
 ```smalltalk
-Gofer it    
+Gofer it
     url: 'http://smalltalkhub.com/mc/gcotelli/RenoirSt/main';
     configurationOf: 'RenoirSt';
     loadStable
