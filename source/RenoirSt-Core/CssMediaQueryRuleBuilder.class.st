@@ -44,15 +44,15 @@ CssMediaQueryRuleBuilder >> colorIndex: anInteger [
 ]
 
 { #category : #'Configuring - Features' }
-CssMediaQueryRuleBuilder >> deviceHeight: aCssLenght [ 
+CssMediaQueryRuleBuilder >> deviceHeight: aCssLength [ 
 	
-	self addExpressionForFeatureNamed: 'device-height' withValue: aCssLenght 
+	self addExpressionForFeatureNamed: 'device-height' withValue: aCssLength 
 ]
 
 { #category : #'Configuring - Features' }
-CssMediaQueryRuleBuilder >> deviceWidth: aCssLenght [ 
+CssMediaQueryRuleBuilder >> deviceWidth: aCssLength [ 
 	
-	self addExpressionForFeatureNamed: 'device-width' withValue: aCssLenght 
+	self addExpressionForFeatureNamed: 'device-width' withValue: aCssLength 
 ]
 
 { #category : #'Configuring - Features' }
@@ -62,9 +62,9 @@ CssMediaQueryRuleBuilder >> grid: anInteger [
 ]
 
 { #category : #'Configuring - Features' }
-CssMediaQueryRuleBuilder >> height: aCssLenght [ 
+CssMediaQueryRuleBuilder >> height: aCssLength [ 
 	
-	self addExpressionForFeatureNamed: 'height' withValue: aCssLenght 
+	self addExpressionForFeatureNamed: 'height' withValue: aCssLength 
 ]
 
 { #category : #'initialize-release' }
@@ -95,21 +95,21 @@ CssMediaQueryRuleBuilder >> maxColorIndex: anInteger [
 ]
 
 { #category : #'Configuring - Features' }
-CssMediaQueryRuleBuilder >> maxDeviceHeight: aCssLenght [ 
+CssMediaQueryRuleBuilder >> maxDeviceHeight: aCssLength [ 
 	
-	self addExpressionForFeatureNamed: 'max-device-height' withValue: aCssLenght 
+	self addExpressionForFeatureNamed: 'max-device-height' withValue: aCssLength 
 ]
 
 { #category : #'Configuring - Features' }
-CssMediaQueryRuleBuilder >> maxDeviceWidth: aCssLenght [ 
+CssMediaQueryRuleBuilder >> maxDeviceWidth: aCssLength [ 
 	
-	self addExpressionForFeatureNamed: 'max-device-width' withValue: aCssLenght 
+	self addExpressionForFeatureNamed: 'max-device-width' withValue: aCssLength 
 ]
 
 { #category : #'Configuring - Features' }
-CssMediaQueryRuleBuilder >> maxHeight: aCssLenght [ 
+CssMediaQueryRuleBuilder >> maxHeight: aCssLength [ 
 	
-	self addExpressionForFeatureNamed: 'max-height' withValue: aCssLenght 
+	self addExpressionForFeatureNamed: 'max-height' withValue: aCssLength 
 ]
 
 { #category : #'Configuring - Features' }
@@ -119,9 +119,9 @@ CssMediaQueryRuleBuilder >> maxMonochrome: anInteger [
 ]
 
 { #category : #'Configuring - Features' }
-CssMediaQueryRuleBuilder >> maxWidth: aCssLenght [ 
+CssMediaQueryRuleBuilder >> maxWidth: aCssLength [ 
 	
-	self addExpressionForFeatureNamed: 'max-width' withValue: aCssLenght 
+	self addExpressionForFeatureNamed: 'max-width' withValue: aCssLength 
 ]
 
 { #category : #'Configuring - Features' }
@@ -143,21 +143,21 @@ CssMediaQueryRuleBuilder >> minColorIndex: anInteger [
 ]
 
 { #category : #'Configuring - Features' }
-CssMediaQueryRuleBuilder >> minDeviceHeight: aCssLenght [ 
+CssMediaQueryRuleBuilder >> minDeviceHeight: aCssLength [ 
 	
-	self addExpressionForFeatureNamed: 'min-device-height' withValue: aCssLenght 
+	self addExpressionForFeatureNamed: 'min-device-height' withValue: aCssLength 
 ]
 
 { #category : #'Configuring - Features' }
-CssMediaQueryRuleBuilder >> minDeviceWidth: aCssLenght [ 
+CssMediaQueryRuleBuilder >> minDeviceWidth: aCssLength [ 
 	
-	self addExpressionForFeatureNamed: 'min-device-width' withValue: aCssLenght 
+	self addExpressionForFeatureNamed: 'min-device-width' withValue: aCssLength 
 ]
 
 { #category : #'Configuring - Features' }
-CssMediaQueryRuleBuilder >> minHeight: aCssLenght [ 
+CssMediaQueryRuleBuilder >> minHeight: aCssLength [ 
 	
-	self addExpressionForFeatureNamed: 'min-height' withValue: aCssLenght 
+	self addExpressionForFeatureNamed: 'min-height' withValue: aCssLength 
 ]
 
 { #category : #'Configuring - Features' }
@@ -167,9 +167,9 @@ CssMediaQueryRuleBuilder >> minMonochrome: anInteger [
 ]
 
 { #category : #'Configuring - Features' }
-CssMediaQueryRuleBuilder >> minWidth: aCssLenght [ 
+CssMediaQueryRuleBuilder >> minWidth: aCssLength [ 
 
-	self addExpressionForFeatureNamed: 'min-width' withValue: aCssLenght 
+	self addExpressionForFeatureNamed: 'min-width' withValue: aCssLength 
 ]
 
 { #category : #'Configuring - Features' }
@@ -209,7 +209,7 @@ CssMediaQueryRuleBuilder >> useStyleSheet: aCascadingStyleSheet [
 ]
 
 { #category : #'Configuring - Features' }
-CssMediaQueryRuleBuilder >> width: aCssLenght [ 
+CssMediaQueryRuleBuilder >> width: aCssLength [ 
 	
-	self addExpressionForFeatureNamed: 'width' withValue: aCssLenght 
+	self addExpressionForFeatureNamed: 'width' withValue: aCssLength 
 ]

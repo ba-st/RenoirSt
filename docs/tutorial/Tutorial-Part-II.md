@@ -4,7 +4,7 @@
 
 So far our focus was on the *style* part of the rule. Let's focus now on the
 available *selectors*. Remember that a CSS selector represents a structure used
-to match elements in the document tree. This chapter asume some familiarity with
+to match elements in the document tree. This chapter assume some familiarity with
 the CSS selectors and will not go in detail about the exact meaning of each one.
 For more details you can take a look at <http://www.w3.org/TR/css3-selectors/>.
 
@@ -429,7 +429,7 @@ Some examples:
 3 n + 1 "Prints as: 3n+1"
 ```
 
-The rest of the selectors in this category are modeled using the following messsages:
+The rest of the selectors in this category are modeled using the following messages:
 
 - `nth-last-child()` -> `childFromLastAt:`
 - `nth-of-type()` -> `siblingOfTypeAt:`
@@ -539,4 +539,4 @@ p.note::before
 }
 ```
 
-[Go to next chapter](Tutorial - Part III.md)
+[Go to next chapter](Tutorial-Part-III.md)

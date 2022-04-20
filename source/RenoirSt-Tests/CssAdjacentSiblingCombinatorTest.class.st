@@ -21,10 +21,10 @@ CssAdjacentSiblingCombinatorTest >> testBuildingShortcut [
 { #category : #Tests }
 CssAdjacentSiblingCombinatorTest >> testPrintString [
 
-	| predecessor sucessor |
+	| predecessor successor |
 	
 	predecessor := CssUniversalSelector implicit class: 'custom'.
-	sucessor := CssTypeSelector ofType: 'div'.
+	successor := CssTypeSelector ofType: 'div'.
 	
-	self assert: (CssAdjacentSiblingCombinator between: predecessor and: sucessor) printString equals: '.custom + div'
+	self assert: (CssAdjacentSiblingCombinator between: predecessor and: successor) printString equals: '.custom + div'
 ]

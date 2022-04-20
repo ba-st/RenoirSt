@@ -1,5 +1,5 @@
 "
-A CssHTMLTypeSelectorTest is a Test case for HTMLtype extentions to CssSelectors
+A CssHTMLTypeSelectorTest is a Test case for HTMLtype extensions to CssSelectors
 
 "
 Class {

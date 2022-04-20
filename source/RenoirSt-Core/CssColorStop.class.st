@@ -13,9 +13,9 @@ Class {
 }
 
 { #category : #'Instance Creation' }
-CssColorStop class >> for: aCssColor at: aLenght [
+CssColorStop class >> for: aCssColor at: aLength [
 
-	^ self new initializeFor: (self lookupColor: aCssColor) at: aLenght
+	^ self new initializeFor: (self lookupColor: aCssColor) at: aLength
 ]
 
 { #category : #Printing }
@@ -27,7 +27,7 @@ CssColorStop >> cssContentOn: aWriteStream [
 ]
 
 { #category : #'initialize-release' }
-CssColorStop >> initializeFor: aCssColor at: aLenght [
+CssColorStop >> initializeFor: aCssColor at: aLength [
 	color := aCssColor.
-	stop := aLenght
+	stop := aLength
 ]

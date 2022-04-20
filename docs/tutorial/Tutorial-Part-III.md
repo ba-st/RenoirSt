@@ -242,7 +242,7 @@ The following media feature messages are supported:
 - Accepting a `CssMeasure` with length units
   - `width:`
   - `minWidth:`
-  - `maxWidht:`
+  - `maxWidth:`
   - `height:`
   - `minHeight:`
   - `maxHeight:`
