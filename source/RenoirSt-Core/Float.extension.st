@@ -66,6 +66,12 @@ Float >> rad [
 ]
 
 { #category : #'*RenoirSt-Core' }
+Float >> rem [
+
+	^ self newMeasureWith: RenoirSt units >> #fontSizeOfRootElement
+]
+
+{ #category : #'*RenoirSt-Core' }
 Float >> s [
 
 	^ self newMeasureWith: RenoirSt units >> #second

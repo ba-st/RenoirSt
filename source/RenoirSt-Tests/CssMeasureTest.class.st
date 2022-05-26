@@ -62,9 +62,12 @@ CssMeasureTest >> testCreationShortcutsForLengths [
 	self
 		assert: 1.3 cm asCssStringEquals: '1.3cm';
 		assert: 0.8 em asCssStringEquals:  '0.8em';
+		assert: 1.3 rem asCssStringEquals: '1.3rem';
 		assert: 1.1 in asCssStringEquals:  '1.1in';
 		assert: 2.9 mm asCssStringEquals:  '2.9mm';
 		assert: 0.1 pc asCssStringEquals:  '0.1pc'.
+		
+
 ]
 
 { #category : #Tests }
