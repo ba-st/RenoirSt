@@ -267,6 +267,7 @@ CssDeclarationBlockTest >> testPrintStringOfTextDecorationProperties [
 CssDeclarationBlockTest >> testPrintStringOfTextProperties [
 
 	self
+		assert: [ :style | style hyphens: #auto ] rendersProperty: 'hyphens' withValue: 'auto';
 		assert: [ :style | style letterSpacing: #normal ] rendersProperty: 'letter-spacing' withValue: 'normal';
 		assert: [ :style | style textAlign: #center ] rendersProperty: 'text-align' withValue: 'center';
 		assert: [ :style | style textDecoration: #underline ] rendersProperty: 'text-decoration' withValue: 'underline';
