@@ -521,6 +521,12 @@ CssDeclarationBlock >> height: aWidth [
 	self propertyAt: 'height' put: aWidth 
 ]
 
+{ #category : #'text properties' }
+CssDeclarationBlock >> hyphens: aCssValue [
+
+	self propertyAt: 'hyphens' put: aCssValue 
+]
+
 { #category : #'initialize-release' }
 CssDeclarationBlock >> initialize [
 
