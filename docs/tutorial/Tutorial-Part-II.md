@@ -4,7 +4,7 @@
 
 So far our focus was on the *style* part of the rule. Let's focus now on the
 available *selectors*. Remember that a CSS selector represents a structure used
-to match elements in the document tree. This chapter assume some familiarity with
+to match elements in the document tree. This chapter assumes some familiarity with
 the CSS selectors and will not go in detail about the exact meaning of each one.
 For more details you can take a look at <http://www.w3.org/TR/css3-selectors/>.
 
@@ -208,7 +208,7 @@ a[hreflang|="en"]
 
 #### Substring matching attribute selectors
 
-This selectors are provided for matching substrings in the value of an attribute:
+These selectors are provided for matching substrings in the value of an attribute:
 
 - `attribute:beginsWith:`
 - `attribute:endsWith:`
@@ -262,7 +262,7 @@ p[title*="hello"]
 ### Pseudo-Classes
 
 The pseudo-class concept is introduced to allow selection based on information
-that lies outside of the document tree or that cannot be expressed using the
+that lies outside the document tree or that cannot be expressed using the
 simpler selectors. Most pseudo-classes are supported just by sending one of the
 following messages `link`, `visited`, `active`, `hover`, `focus`, `target`,
 `enabled`, `disabled` or `checked`.
@@ -334,7 +334,7 @@ selector (excluding the negation pseudo-class itself) as an argument. It
 represents an element that is not represented by its argument.
 For more information take a look at: <http://www.w3.org/TR/css3-selectors/#negation>.
 
-This selector is supported sending the message `not:`. Lets see an example:
+This selector is supported sending the message `not:`. Let's see an example:
 
 ```smalltalk
 CascadingStyleSheetBuilder new
@@ -378,9 +378,9 @@ CascadingStyleSheetBuilder new
 The `:nth-child(an+b)` pseudo-class notation represents an element that has
 `an+b-1` siblings before it in the document tree, for any positive integer or
 zero value of n, and has a parent element. For values of a and b greater than
-zero, this effectively divides the element's children into groups of a elements
-(the last group taking the remainder), and selecting the bth element of each
-group. The a and b values must be integers (positive, negative, or zero). The
+zero, this effectively divides the element's children into groups of `a` elements
+(the last group taking the remainder), and selecting the `b`th element of each
+group. The `a` and `b` values must be integers (positive, negative, or zero). The
 index of the first child of an element is 1.
 
 In addition to this, `:nth-child()` can take ‘odd’ and ‘even’ as arguments
@@ -431,16 +431,16 @@ Some examples:
 
 The rest of the selectors in this category are modeled using the following messages:
 
-- `nth-last-child()` -> `childFromLastAt:`
-- `nth-of-type()` -> `siblingOfTypeAt:`
-- `nth-last-of-type()` -> `siblingOfTypeFromLastAt:`
-- `first-child` -> `firstChild`
-- `last-child` -> `lastChild`
-- `first-of-type` -> `firstOfType`
-- `last-of-type` -> `lastOfType`
-- `only-child` -> `onlyChild`
-- `only-of-type` -> `onlyOfType`
-- `empty` -> `empty`
+- `nth-last-child()` → `childFromLastAt:`
+- `nth-of-type()` → `siblingOfTypeAt:`
+- `nth-last-of-type()` → `siblingOfTypeFromLastAt:`
+- `first-child` → `firstChild`
+- `last-child` → `lastChild`
+- `first-of-type` → `firstOfType`
+- `last-of-type` → `lastOfType`
+- `only-child` → `onlyChild`
+- `only-of-type` → `onlyOfType`
+- `empty` → `empty`
 
 ### Pseudo-Elements
 

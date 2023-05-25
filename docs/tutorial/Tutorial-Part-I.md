@@ -96,7 +96,7 @@ The supported frequency units are:
 It also supports the creation of percentages: `50 percent` is expressed as `50%`
 in the resulting CSS.
 
-Some properties require integer or floating point values. In this cases just use
+Some properties require integer or floating point values. In these cases just use
 the Pharo provided integer and float support. For example:
 
 ```smalltalk
@@ -134,7 +134,7 @@ div
 }
 ```
 
-> **Hint:** In a real scenario you should never hardcode the colors as in the
+> **Hint:** In a real scenario you should never hard code the colors as in the
 > examples, instead put them in objects representing a theme or something that
 > gives them a name related to your application.
 
@@ -183,7 +183,7 @@ div
 #### Several Property Values
 
 Some properties support a wide range of values. For example the `margin`
-property can have 1, 2 , 3 or 4 values specified. If only one value needs to be
+property can have 1, 2, 3 or 4 values specified. If only one value needs to be
 specified just provide it, in other case use an `Array` like this:
 
 ```smalltalk
@@ -204,17 +204,17 @@ div
 
 #### URLs
 
-`ZnUrl` instances can be used as the value for properties requiring an URI.
+`ZnUrl` instances can be used as the value for properties requiring a URI.
 Both relative and absolute URLs are accepted. A relative URL is by default
 considered relative to the site root.
 
 ```smalltalk
 CascadingStyleSheetBuilder new
   declareRuleSetFor: [:selector | selector div class: 'logo' ]
-  with: [:style | style backgroundImage: 'images/logo.png' asZnUrl ];
+  with: [:style | style backgroundImage: 'images/logo.png' asUrl ];
   declareRuleSetFor: [:selector | selector div class: 'logo' ]
   with: [:style | style
-    backgroundImage: 'http://www.example.com/images/logo.png' asZnUrl ];
+    backgroundImage: 'http://www.example.com/images/logo.png' asUrl ];
   build
 ```
 
@@ -232,12 +232,12 @@ div.logo
 }
 ```
 
-In case you want an URL relative to the style sheet, you must send the message `relativeToStyleSheet`:
+In case you want a URL relative to the style sheet, you must send the message `relativeToStyleSheet`:
 
 ```smalltalk
 CascadingStyleSheetBuilder new
   declareRuleSetFor: [:selector | selector div class: 'logo' ]
-  with: [:style | style backgroundImage: 'images/logo.png' asZnUrl relativeToStyleSheet];
+  with: [:style | style backgroundImage: 'images/logo.png' asUrl relativeToStyleSheet];
   build
 ```
 
@@ -295,9 +295,9 @@ complex types or invoke special processing. The following notations are supporte
 
 #### Mathematical Expressions: `calc()`
 
-The library provides support for math expressions using the  `CssMathExpression`
+The library provides support for math expressions using the `CssMathExpression`
 abstraction. This math expressions are built instantiating a `CssMathExpression`
-with the first operand, and sending to it `+`, `-`, `*` or `/` messages. Lets
+with the first operand, and sending to it `+`, `-`, `*` or `/` messages. Let's
 see some example:
 
 ```smalltalk
@@ -341,7 +341,7 @@ ul ul
 
 #### Attribute references: `attr()`
 
-The attr() function is allowed as a component value in properties applied to an
+The `attr()` function is allowed as a component value in properties applied to an
 element or pseudo-element. It returns the value of an attribute on the element.
 If used on a pseudo-element, it returns the value of the attribute on the
 pseudo-element's originating element. It's supported using the
@@ -562,16 +562,16 @@ repeating-radial-gradient(yellow, green);
 
 #### Transforms
 
-Css transforms are a collection of functions that allow you to shape elements
+CSS transforms are a collection of functions that allow you to shape elements
 in particular ways.
 
 ##### Rotation: `rotate()` `rotateX()` `rotateY()` `rotateZ()` `rotate3d()`
 
 The library provides support for rotation functions, used in animations to move
-an element around a central point. The rotate expressions are built
+an element around a central point. The `rotate` expressions are built
 instantiating `CssRotate` or `CssRotate3D` for 3D rotations.
 
-Lets see a basic working rotation example:
+Let's see a basic working rotation example:
 
 ```smalltalk
 CascadingStyleSheetBuilder new
@@ -628,7 +628,7 @@ div
 The library supports `translate` functions, used to mode the position of an
 element. To translate an element, instantiate `CssTranslate`.
 
-Lets see an example:
+Let's see an example:
 
 ```smalltalk
 CascadingStyleSheetBuilder new
@@ -826,7 +826,7 @@ div
 ##### Steps
 
 The library also supports the `steps` function, used in the timing parameter of
-animation keyframes called `animation-timing-function`. Steps are a timing
+animation key frames called `animation-timing-function`. Steps are a timing
 function that allows us to break an animation or transition into segments.
 
 A usage example can be:
@@ -888,7 +888,7 @@ div
 Renoir supports the `cubic-bezier` function, that can be used with the
 `transition-timing-function` property to control how a transition will change
 speed over its duration. It also works with the `animation-timing-function` for
-keyframes. To create your own cubic bezier timing function build an instance
+keyframes. To create your own cubic Bézier timing function build an instance
 with `CssCubicBezier`.
 
 Here's an example:

@@ -58,7 +58,7 @@ animation, 100% is when the animation is complete.
 > **Tip:** For best browser support, you should always define both the 0% and the
 > 100% selectors.
 
-A basic keyframe rule consists of specifying just a keyframe with some style rule:
+A basic key frame rule consists of specifying just a key frame with some style rule:
 
 ```smalltalk
 CascadingStyleSheetBuilder new
@@ -75,7 +75,7 @@ CascadingStyleSheetBuilder new
 To use keyframes in the library just send the message
 `declare:forKeyframesNamed:` to the builder.  The first closure is evaluated
 with an instance of a `CascadingStyleSheetBuilder`. The second parameter is to
-give a name to your keyframe rule.
+give a name to your key frame rule.
 
 The style can be built with either the `animation:` shorthand:
 
@@ -193,7 +193,7 @@ div
 }
 ```
 
-> **Note:** The `!important` rule is ignored in a keyframe
+> **Note:** The `!important` rule is ignored in a key frame
 
 ### Keyframe references
 
@@ -203,7 +203,7 @@ div
 
 A `@media` rule specifies the target media types of a set of statements. The
 `@media` construct allows style sheet rules that apply to various media in the
-same style sheet. Style rules outside of `@media` rules apply to all media types
+same style sheet. Style rules outside `@media` rules apply to all media types
 that the style sheet applies to. At-rules inside `@media` are invalid in CSS2.1.
 
 The most basic media rule consists of specifying just a media type:
@@ -320,8 +320,8 @@ Evaluates to:
 
 ## Vendor specific extensions
 
-The library doesn't provide out of the box support for non standard properties.
-However since version `1.4.0` the message `vendorPropertyAt:put:` is available
+The library doesn't provide out of the box support for non-standard properties.
+However, since version `1.4.0` the message `vendorPropertyAt:put:` is available
 to ease the creation of this kind of properties by the end user.
 
 For example:
@@ -347,7 +347,7 @@ div
 ```
 
 > **Hint:** If you really want to use a vendor specific extension, It's better
-> to create an extension method sending the vendorPropertyAt:put: message.
+> to create an extension method sending the `vendorPropertyAt:put:` message.
 
 ## Font Face Rules
 
@@ -380,7 +380,7 @@ renders as:
 ```
 
 This kind of rule allows for multiple `src` definitions specifying the resources
-containing the data. This resources can be external (fonts fetched from a URL)
+containing the data. These resources can be external (fonts fetched from a URL)
 or local (available in the user system). This kind of resources are supported
 using `CssLocalFontReference` and `CssExternalFontReference`.
 
@@ -421,7 +421,7 @@ CascadingStyleSheetBuilder new
 ### Units
 
 The `Units` package (available using the ConfigurationBrowser in Pharo) includes
-some extensions that collides with RenoirSt.  Since version `1.1.0` this library
+some extensions that collide with RenoirSt.  Since version `1.1.0` this library
 is able to load automatically a compatibility package if it's loaded after
 `Units` package.
 
@@ -430,7 +430,7 @@ is able to load automatically a compatibility package if it's loaded after
 The library includes an optional group including some useful extensions. The
 [Seaside](www.seaside.st) framework includes his own class modeling URLs, when
 this configuration is loaded the instances of `WAUrl` can be used in the
-properties requiring an URI:
+properties requiring a URI:
 
 ```smalltalk
 CascadingStyleSheetBuilder new
@@ -452,7 +452,7 @@ This optional configuration also loads extensions to `CssDeclarationBlock` so it
 can be used as a `JSObject` in plugins requiring some style parameter or in
 `style:` methods.
 
-To load this extensions you need to load in an image with Seaside already loaded
+To load these extensions you need to load in an image with Seaside already loaded
 the group `Deployment-Seaside-Extensions` or `Development-Seaside-Extensions`
 (if you want the test cases):
 
@@ -502,7 +502,7 @@ matching on the versions given this project uses Semantic Versioning:
 
 The available groups are:
 
-- Deployment: Base library  (the default group)
+- Deployment: Base library (the default group)
 - Development: Deployment + Test cases
 - Deployment-Seaside-Extensions: Deployment + Seaside specific extensions
 - Development-Seaside-Extensions: Deployment-Seaside-Extensions + Test cases
