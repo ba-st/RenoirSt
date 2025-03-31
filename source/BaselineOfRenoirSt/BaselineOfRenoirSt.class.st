@@ -2,12 +2,13 @@
 Metacello Baseline definition for RenoirSt
 "
 Class {
-	#name : #BaselineOfRenoirSt,
-	#superclass : #BaselineOf,
-	#category : #BaselineOfRenoirSt
+	#name : 'BaselineOfRenoirSt',
+	#superclass : 'BaselineOf',
+	#category : 'BaselineOfRenoirSt',
+	#package : 'BaselineOfRenoirSt'
 }
 
-{ #category : #baselines }
+{ #category : 'baselines' }
 BaselineOfRenoirSt >> baseline: spec [
 
 	<baseline>
@@ -25,24 +26,24 @@ BaselineOfRenoirSt >> baseline: spec [
 			]
 ]
 
-{ #category : #private }
+{ #category : 'private' }
 BaselineOfRenoirSt >> customProjectAttributes [
 
 	Smalltalk globals at: #UnitValue ifPresent: [ :class | ^ #(#UnitsIsLoaded) ].
 	^ super customProjectAttributes
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 BaselineOfRenoirSt >> projectClass [
 
 	^ MetacelloCypressBaselineProject
 ]
 
-{ #category : #private }
+{ #category : 'private' }
 BaselineOfRenoirSt >> setUpDependencies: spec [
 
 	spec
-		baseline: 'Buoy' with: [ spec repository: 'github://ba-st/Buoy:v6' ];
+		baseline: 'Buoy' with: [ spec repository: 'github://ba-st/Buoy:v8' ];
 		project: 'Buoy-Deployment' copyFrom: 'Buoy' with: [ spec loads: 'Deployment' ];
 		project: 'Buoy-SUnit' copyFrom: 'Buoy' with: [ spec loads: 'Dependent-SUnit-Extensions' ];
 		project: 'Buoy-Tools' copyFrom: 'Buoy' with: [ spec loads: 'Tools' ].
@@ -52,7 +53,7 @@ BaselineOfRenoirSt >> setUpDependencies: spec [
 		project: 'Seaside3-Javascript' copyFrom: 'Seaside3' with: [ spec loads: 'Javascript' ]
 ]
 
-{ #category : #private }
+{ #category : 'private' }
 BaselineOfRenoirSt >> setUpPackages: spec [
 
 	spec
@@ -74,7 +75,7 @@ BaselineOfRenoirSt >> setUpPackages: spec [
 			]
 ]
 
-{ #category : #private }
+{ #category : 'private' }
 BaselineOfRenoirSt >> setUpSeasideExtensionPackages: spec [
 
 	spec
