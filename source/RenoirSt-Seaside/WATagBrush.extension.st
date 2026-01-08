@@ -1,6 +1,6 @@
-Extension { #name : #WATagBrush }
+Extension { #name : 'WATagBrush' }
 
-{ #category : #'*RenoirSt-Seaside' }
+{ #category : '*RenoirSt-Seaside' }
 WATagBrush >> setStyleTo: aDeclarationAction [
 
 	| declarationBlock |

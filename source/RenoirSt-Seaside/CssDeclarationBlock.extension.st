@@ -1,12 +1,12 @@
-Extension { #name : #CssDeclarationBlock }
+Extension { #name : 'CssDeclarationBlock' }
 
-{ #category : #'*RenoirSt-Seaside' }
+{ #category : '*RenoirSt-Seaside' }
 CssDeclarationBlock >> greaseString [
 
 	^ String streamContents: [ :stream | self printInlinedOn: stream ]
 ]
 
-{ #category : #'*RenoirSt-Seaside' }
+{ #category : '*RenoirSt-Seaside' }
 CssDeclarationBlock >> javascriptOn: aStream [
 
 	aStream nextPut: ${.
