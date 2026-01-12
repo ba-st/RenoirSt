@@ -1,6 +1,6 @@
-Extension { #name : #WAUrl }
+Extension { #name : 'WAUrl' }
 
-{ #category : #'*RenoirSt-Seaside' }
+{ #category : '*RenoirSt-Seaside' }
 WAUrl >> cssContentOn: aStream [
 
 	aStream nextPutAll: 'url("'.
@@ -12,7 +12,7 @@ WAUrl >> cssContentOn: aStream [
 	aStream nextPutAll: '")'
 ]
 
-{ #category : #'*RenoirSt-Seaside' }
+{ #category : '*RenoirSt-Seaside' }
 WAUrl >> cssContentRelativeToStyleSheetOn: aStream [
 
 	aStream nextPutAll: 'url("'.
@@ -22,7 +22,7 @@ WAUrl >> cssContentRelativeToStyleSheetOn: aStream [
 	aStream nextPutAll: '")'
 ]
 
-{ #category : #'*RenoirSt-Seaside' }
+{ #category : '*RenoirSt-Seaside' }
 WAUrl >> relativeToStyleSheet [
 
 	^UrlRelativeToStyleSheet on: self

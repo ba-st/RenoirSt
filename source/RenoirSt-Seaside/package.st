@@ -1,1 +1,1 @@
-Package { #name : #'RenoirSt-Seaside' }
+Package { #name : 'RenoirSt-Seaside' }

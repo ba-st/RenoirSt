@@ -1,9 +1,7 @@
-Extension { #name : #CssColorUnit }
+Extension { #name : 'CssColorUnit' }
 
-{ #category : #'*RenoirSt-Seaside' }
-CssColorUnit >> javascriptOn: aStream [
+{ #category : '*RenoirSt-Seaside' }
+CssColorUnit >> javascriptOn: aRenderer [
 
-	aStream nextPut: $".
-	self cssContentOn: aStream.
-	aStream nextPut: $"
+	aRenderer string: ( String streamContents: [ :stream | self cssContentOn: stream ] )
 ]

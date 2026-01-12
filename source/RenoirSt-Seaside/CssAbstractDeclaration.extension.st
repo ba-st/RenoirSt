@@ -1,14 +1,11 @@
-Extension { #name : #CssAbstractDeclaration }
+Extension { #name : 'CssAbstractDeclaration' }
 
-{ #category : #'*RenoirSt-Seaside' }
-CssAbstractDeclaration >> javascriptOn: aStream [
+{ #category : '*RenoirSt-Seaside' }
+CssAbstractDeclaration >> javascriptOn: aRenderer [
 
-	aStream nextPut: $".
-	self property cssContentOn: aStream.
-	aStream
-		nextPut: $";
-		nextPut: $:;
-		nextPut: $".
-	self value cssContentOn: aStream.
-	aStream nextPut: $"
+	aRenderer
+		key: [
+			aRenderer string: ( String streamContents: [ :stream | self property cssContentOn: stream ] ) ]
+		value: [
+			aRenderer string: ( String streamContents: [ :stream | self value cssContentOn: stream ] ) ]
 ]
